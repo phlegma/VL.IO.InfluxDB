@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2025.7.1-0024-g908f8d67c8" Version="0.128">
+  <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
+    <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="VL.IO.InfluxDB" CanvasType="FullCategory">
+      <!--
+
+    ************************ Create ************************
+
+-->
+      <Node Name="Create" Bounds="179,202,112,80" Id="KddYUapBU4kL90nTWLQY71">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="A3N3SCGRcZuPplDTXbWA7t">
+          <Node Bounds="191,231,85,26" AutoConnect="true" Id="Co1Sm2sVJyxLHYlUNkvu2d">
+            <p:NodeReference LastCategoryFullName="InfluxDB3.Client.InfluxDBClient" LastDependency="InfluxDB3.Client.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="OperationNode" Name="Create" />
+              <FullNameCategoryReference ID="InfluxDB3.Client.InfluxDBClient" />
+              <PinReference Kind="InputPin" Name="Host" />
+            </p:NodeReference>
+            <Pin Id="EuVI6vThIzGQYwcLhaJ6LS" Name="Host" Kind="InputPin" />
+            <Pin Id="Fu7FmRieacJNvi9G5qbupA" Name="Token" Kind="InputPin" />
+            <Pin Id="DHVbCmQyc6eOHM5eqQdMXB" Name="Organization" Kind="InputPin" />
+            <Pin Id="S7oOgH1oNYWLjUMH9A5cIA" Name="Database" Kind="InputPin" />
+            <Pin Id="VQe9620bfAgMK9mM2phxoG" Name="Auth Scheme" Kind="InputPin" />
+            <Pin Id="DbwNhz0fY2uNKEVtdFEyII" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pin Id="MoY5JrcxOeyNWHOzYFfHMo" Name="Host" Kind="InputPin" />
+          <Pin Id="CSN3JExKFhxM7gtxW3Baei" Name="Token" Kind="InputPin" />
+          <Pin Id="SlnRj9lwyplNseyFLcwWgm" Name="Organization" Kind="InputPin" />
+          <Pin Id="LoVncG0EUx7ORhZxaotz2h" Name="Database" Kind="InputPin" />
+          <Pin Id="C19ZcaPBzJkNNq62CmD0Ob" Name="Auth Scheme" Kind="InputPin" />
+          <Pin Id="TuRB5fjvcycPQZdZOAzIgh" Name="Output" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ InfluxDBClient ************************
+
+-->
+      <Node Name="InfluxDBClient" Bounds="423,200" Id="POKFmlcdGg0OrZqWRlM3Cl">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="InfluxDB3.Client" LastDependency="InfluxDB3.Client.dll">
+          <Choice Kind="TypeFlag" Name="InfluxDBClient" />
+          <FullNameCategoryReference ID="InfluxDB3.Client" />
+          <AssemblyReference ID="InfluxDB3.Client.dll" />
+        </p:TypeAnnotation>
+        <Patch Id="GOifTOrcc3yNFM9QsWVB6A">
+          <Canvas Id="EynrmNEaFq5MKvAxr4OWdo" CanvasType="Group" />
+          <ProcessDefinition Id="AMoql6Cgz7ROD0bUgpe5fQ" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PointData ************************
+
+-->
+      <Node Name="PointData" Bounds="787,184" Id="TktUP8bDe1dLrdGx5VdYlJ">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="InfluxDB3.Client.Write" LastDependency="InfluxDB3.Client.dll">
+          <Choice Kind="TypeFlag" Name="PointData" />
+          <FullNameCategoryReference ID="InfluxDB3.Client.Write" />
+          <AssemblyReference ID="InfluxDB3.Client.dll" />
+        </p:TypeAnnotation>
+        <Patch Id="NGrQ1FLf8lLOohZw9KCF1X">
+          <Canvas Id="O5qNGtNjVLsP6d2t02JDjW" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="QFIuCQ4iSEVMwcsD383yjA" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ PointDataValues ************************
+
+-->
+      <Node Name="PointDataValues" Bounds="787,260" Id="DFEXUPK8694PgWerNf2oYS">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="InfluxDB3.Client.Write" LastDependency="InfluxDB3.Client.dll">
+          <Choice Kind="TypeFlag" Name="PointDataValues" />
+          <FullNameCategoryReference ID="InfluxDB3.Client.Write" />
+          <AssemblyReference ID="InfluxDB3.Client.dll" />
+        </p:TypeAnnotation>
+        <Patch Id="AOOysMfuQxiMqGp7YLPWSl">
+          <Canvas Id="G8uve9a1keXPznmT22EMcx" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="M2vtrSZGEkbLkj6cLnk37O" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="GzS10oTkIGnMGZknNaV2y2">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PbUNtDBhKLVPbHQvb8Ta2L">
+        <Canvas Id="QOaMfDZHJrCLJ8x5mM6Dq2" CanvasType="Group" />
+        <Patch Id="DBYmxfeIOlcLboDdIT5h0Z" Name="Create" />
+        <Patch Id="DogxJckKCZBOH8kuk619TC" Name="Update" />
+        <ProcessDefinition Id="Tj3xex7K12gLJd6jX9L1AG">
+          <Fragment Id="EyvBKHDCCxfLfKfYFfCAen" Patch="DBYmxfeIOlcLboDdIT5h0Z" Enabled="true" />
+          <Fragment Id="D3Clk786tbBPenDaPo3VHE" Patch="DogxJckKCZBOH8kuk619TC" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2025.7.1-0024-g908f8d67c8" />
+  <NugetDependency Id="H11zEwiwuvVPtgDUmjfiGq" Location="InfluxDB3.Client" Version="1.4.0" />
+</Document>
