@@ -1,11 +1,6 @@
-# VL.NewLibrary.Template
+# VL.IO.InfluxDB
 
-- [ ] A clear and concise description of what this package is and does, also what problem it solves.
-- [ ] In case this is a wrapper, links to original code and which version of it is used
-- [ ] In case this is for a device/protocol, links to the device/protocol-specs
-- [ ] Required dependencies/drivers to download and install in the getting started section below
-- [ ] If available, links to documentation (other than helppatches), tutorial videos, blog posts, ...
-- [ ] Note that you can also [include images](https://devblogs.microsoft.com/nuget/add-a-readme-to-your-nuget-package/#markdown-and-image-support)!
+This is a wrapper of the [InfluxDB 3 C# .NET Client](https://github.com/InfluxCommunity/influxdb3-csharp) to write and read to influxDBs. For more Informations about see their [documentation](https://docs.influxdata.com). For all infos about the InfluxDB3.Client API see the [API documentation](https://influxcommunity.github.io/influxdb3-csharp/api/InfluxDB3.Client.html).
 - [ ] Mention any limitations
 
 For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
@@ -13,7 +8,7 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
 ## Getting started
 - Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
 
-    `nuget install VL.NewLibrary.Template -pre`
+    `nuget install VL.IO.InfluxDB`
 
 - Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 
@@ -27,4 +22,4 @@ Links to libraries this is based on
 
 ## Sponsoring
 Development of this library was partially sponsored by:  
-* 
+* [MESO Digital Interiors GmbH ](http://meso.design)
