@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="Va8gDxoX6xSOj7yNDDIMhS" LanguageVersion="2025.7.1-0032-g30eee3cbf9" Version="0.128">
+  <NugetDependency Id="SuV33WkcSt7NNk4P6q41vI" Location="VL.CoreLib" Version="2025.7.1-0032-g30eee3cbf9" />
+  <Patch Id="Ei3qjemSP6yL3lx3Wz1AlS">
+    <Canvas Id="G0h3H7OO2hiNA4SG4XgJVb" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="SxCjY7uRiJWNPxdlmyoqJ6">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="SY5k1G1nuk5OEDT0fbcWWY">
+        <Canvas Id="IX5ieGTPMTKPi8vitZ8i7B" CanvasType="Group">
+          <Pad Id="LctXCc47hr4NVutaGHXKNn" Comment="Host" Bounds="23,10,288,15" ShowValueBox="true" isIOBox="true" Value="https://eu-central-1-1.aws.cloud2.influxdata.com">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="UURFoXlyqZtLTMTVBIlIah" Comment="Token" Bounds="50,50,72,15" ShowValueBox="true" isIOBox="true" Value="uVs8Nj6xpdaJF1eWOCFubXj80rtv2ZenVqg_lqWhYYXk0zHfK47sx1OEz9_l68aFHFxS4-PYcBNf-t-vRBoIYw==">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Ry1FhWRZaO2MCeUsDWFdWF" Comment="Organization" Bounds="76,81,45,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="21,110,85,19" Id="L5vMoWpm19POZKyPRRsX1c">
+            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB.InfluxDBClient" LastDependency="VL.IO.InfluxDB.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Client" />
+            </p:NodeReference>
+            <Pin Id="Kw5fYrInsdqQV0MGa4wx54" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QZbQpTaNkjrO99WBfwZevY" Name="Output" Kind="OutputPin" />
+            <Pin Id="EkGW5fVAuHpNsOayw2wbyO" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="N1w2RL0lnwUML39XKXSUEt" Name="Host" Kind="InputPin" />
+            <Pin Id="P4mKPM0IJL9Ls8PGfTCrsq" Name="Token" Kind="InputPin" />
+            <Pin Id="TmFNN7sKlL6LsQov7o4Kf1" Name="Organization" Kind="InputPin" />
+            <Pin Id="BxUxwUIs6FLLJ6SNoR04Fi" Name="Database" Kind="InputPin" />
+            <Pin Id="IA7qpJeqkYwQQ0VkW4fE3g" Name="Success" Kind="OutputPin" />
+            <Pin Id="QeawjKbvWqKN8Qu4w17F9x" Name="Server Version" Kind="OutputPin" />
+          </Node>
+          <Pad Id="S3kMlFuM2y4QPV9r71F0ND" Comment="Error Message" Bounds="50,171,170,39" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MuYHX6aYE3BN3tykYOi8r7" Bounds="-11,-97,408,39" ShowValueBox="true" isIOBox="true" Value="https://www.influxdata.com/get-influxdb/">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FAVbnOQowVxMQJVFp5Uy9v" Bounds="-11,-124,548,21" ShowValueBox="true" isIOBox="true" Value="Got to InfluxData Website and click your cloud database or hosted it by your own:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HJpLSUptQeZPXuAlSDlWjj" Bounds="-11,-64,276,25" ShowValueBox="true" isIOBox="true" Value="Add Host, Token, and Organization">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="17,600,125,19" Id="DvNTstznMuXQCtf7tZddcR">
+            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB" LastDependency="VL.IO.InfluxDB.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="WritePointAsync" />
+            </p:NodeReference>
+            <Pin Id="LwnLb2wCuVOM8dpgOgYDXx" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IpkiPviY1uKNiBPR0MylaN" Name="Client" Kind="InputPin" />
+            <Pin Id="NQzXtkpzMcVMsQqltRkeUu" Name="Database" Kind="InputPin" />
+            <Pin Id="VFHeNpizQilLIapOIeb6h9" Name="Point" Kind="InputPin" />
+            <Pin Id="UX98jA4FmOxO4bn5EJ9xds" Name="Precision" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BDI5QFpRbMFNMYv2sVjW3n" Name="Send" Kind="InputPin" />
+            <Pin Id="BdkAYHkoPQQP2zDy5ugpa6" Name="Is Completed" Kind="OutputPin" />
+            <Pin Id="VRunQnMDHgnO7fP8KHk9al" Name="Headers" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KhFiipDHB9hN5Lozqed6EL" Name="Cancellation Token" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="97,280,60,19" Id="NguMl9MRlL2Oqc1pu219c5">
+            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB" LastDependency="VL.IO.InfluxDB.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PointData" />
+            </p:NodeReference>
+            <Pin Id="VZg5mgvzFgcMog6O7oQB3l" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GBOcE3VKzedOMaIlBjwvBr" Name="Measurement Name" Kind="InputPin" />
+            <Pin Id="PHJzLpcj18hMTd4b4Seq1Y" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="D3G51tYqcvlLA7acykR1xY" Comment="Measurement Name" Bounds="99,261,46,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="S56KGynuzZqQGRtV2qRwtq" Comment="Database" Bounds="59,540,72,15" ShowValueBox="true" isIOBox="true" Value="vvvvBucket">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Jp1nGQP67d2P3loJEGBKri" Comment="" Bounds="286,360,54,17" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="284,320,100,19" Id="BWN2zRRNP9EOgjEOW727oo">
+            <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FrameCounter" />
+            </p:NodeReference>
+            <Pin Id="MN1wM1GTsF2NtUWTa86y0e" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SRBAW4hS3rFNjBrJJzTa3b" Name="Count" Kind="ApplyPin" DefaultValue="True" />
+            <Pin Id="J9yliTAGbJ3NIxI8vX8h2m" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="De4JpXeitxNM0qS5tgyMuA" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="97,380,52,19" Id="QEMJkXh5m4xNlGOuwu6UG0">
+            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB" LastDependency="VL.IO.InfluxDB.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SetField" />
+            </p:NodeReference>
+            <Pin Id="EnJk5J7SjKILn3gnQ5Fsdj" Name="Input" Kind="InputPin" />
+            <Pin Id="Jny18Zq0suUPdd6SnTSvWj" Name="Name" Kind="InputPin" />
+            <Pin Id="D5oeoKfErMdOGdFznCdDn1" Name="Value" Kind="InputPin" />
+            <Pin Id="HAcjL8BnJCQNlZnzREt4BX" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Lgpdeiy2MxEO7teWj6vqQv" Comment="Name" Bounds="123,321,111,15" ShowValueBox="true" isIOBox="true" Value="FrameCounter">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="97,470,51,26" Id="LDtlKbEcYYUPLuusbd5JzR">
+            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB.PointData" LastDependency="VL.IO.InfluxDB.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="PointData" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SetTag" />
+            </p:NodeReference>
+            <Pin Id="MAGTbNatDJ5MGCdkTOADVG" Name="Input" Kind="StateInputPin" />
+            <Pin Id="GAnYSfJdGDvMM1Tx7l3BGs" Name="Name" Kind="InputPin" />
+            <Pin Id="TcsQdUmD0m8QH3xJOU8IXl" Name="Value" Kind="InputPin" />
+            <Pin Id="DyBoG9LLjrZNqHJvVVq0Uu" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="LerS94MUXfHLEDYZtvKv42" Comment="Name" Bounds="122,421,33,20" ShowValueBox="true" isIOBox="true" Value="Foo">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="E7XI73jVypiQRCICT16skC" Comment="Value" Bounds="145,450,35,15" ShowValueBox="true" isIOBox="true" Value="Bar">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="336,610,85,19" Id="KxLJNhAq5AROR0pJiKLW0C">
+            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB" LastDependency="VL.IO.InfluxDB.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="InfluxDB" />
+              <Choice Kind="ProcessAppFlag" Name="Query" />
+            </p:NodeReference>
+            <Pin Id="HpkgXgIoL2DOTgE64aWHOT" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SWGAZ0QFhNGNbKThyIfSdN" Name="Client" Kind="InputPin" />
+            <Pin Id="VE8B0fxORgLMun56ZlHfpQ" Name="Database" Kind="InputPin" />
+            <Pin Id="T4DMXVrTzeCQUfMFuMS5KU" Name="Send" Kind="InputPin" />
+            <Pin Id="GVl6hSVeW32PwGtcUl2V3C" Name="Headers" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OFTSAXXWp41MGrTfJ4rqMk" Name="Named Parameters" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ERc9kMAPxQhK90Qj5AWy3I" Name="Query Type" Kind="InputPin" DefaultValue="SQL" />
+            <Pin Id="QmbM2iHMHUEMcFxZOQO0Uw" Name="Query" Kind="InputPin" />
+            <Pin Id="FJqtEsDEQgyNTk3HatCTQY" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="232,540,45,19" Id="My5EJxQ4SCfPbyHfsxwYjx">
+            <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LFO" />
+            </p:NodeReference>
+            <Pin Id="FwFw4C6uionOgTtg9SAvRg" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CaOPxf4HR1ELxOyJoHJGi8" Name="Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LgegXoDdHZOMkuzRHKA8GO" Name="New Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QFJxzDwJwH5OzEgJBlQfQF" Name="Period" Kind="InputPin" DefaultValue="5" />
+            <Pin Id="KjwqvD1ZWc5LViyQBFSWTz" Name="Pause" Kind="InputPin" />
+            <Pin Id="Ug2CnELF8jdOpywJWxTbAd" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="SnBF9ZpMt85NmvYFV2yoeQ" Name="Phase" Kind="OutputPin" />
+            <Pin Id="I4CWvYr8vc3POm0djdTdBJ" Name="On New Cycle" Kind="OutputPin" />
+            <Pin Id="Bki5IQzzzrBN0H8MJkQUHI" Name="Cycles" Kind="OutputPin" />
+          </Node>
+          <Pad Id="NqaUQnISF6eQVj99v9quGL" Comment="io" Bounds="421,451,183,116" ShowValueBox="true" isIOBox="true" Value="SELECT *&#xD;&#xA;FROM &quot;vvvv&quot;&#xD;&#xA;WHERE&#xD;&#xA;time &gt;= now() - interval '1 hour'&#xD;&#xA;AND&#xD;&#xA;&quot;Foo&quot; IN ('Bar')&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="UQVI1xlcvhDQJMnES7COFk" Name="Create" />
+        <Patch Id="LCrxjI27Wp1LtObssxzkld" Name="Update" />
+        <ProcessDefinition Id="HxQgla4D91cMf9wTr4EH0p">
+          <Fragment Id="FlCKhMjL0UGOjcLbhC4oZu" Patch="UQVI1xlcvhDQJMnES7COFk" Enabled="true" />
+          <Fragment Id="E2jTRK43iSjQZcuV2CoR7Y" Patch="LCrxjI27Wp1LtObssxzkld" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Fhu91Jn2vNFLQVCABLlaih" Ids="LctXCc47hr4NVutaGHXKNn,N1w2RL0lnwUML39XKXSUEt" />
+        <Link Id="GWQQLJx7qgCNU0xFFiqmk3" Ids="UURFoXlyqZtLTMTVBIlIah,P4mKPM0IJL9Ls8PGfTCrsq" />
+        <Link Id="SsG9qIAcKEGLqWYz5zvTKo" Ids="Ry1FhWRZaO2MCeUsDWFdWF,TmFNN7sKlL6LsQov7o4Kf1" />
+        <Link Id="HLc9CnxnV1pMMTH58ooe5D" Ids="EkGW5fVAuHpNsOayw2wbyO,S3kMlFuM2y4QPV9r71F0ND" />
+        <Link Id="NJrjJorgQfYO3Yg0ZfW178" Ids="D3G51tYqcvlLA7acykR1xY,GBOcE3VKzedOMaIlBjwvBr" />
+        <Link Id="A1mnRnVw54hP6oLksV03DT" Ids="De4JpXeitxNM0qS5tgyMuA,Jp1nGQP67d2P3loJEGBKri" />
+        <Link Id="DFm7lnzxeNcNVXHfVKuqtA" Ids="S56KGynuzZqQGRtV2qRwtq,NQzXtkpzMcVMsQqltRkeUu" />
+        <Link Id="FOyP6sHMy5bLxp4nxvhKiZ" Ids="PHJzLpcj18hMTd4b4Seq1Y,EnJk5J7SjKILn3gnQ5Fsdj" />
+        <Link Id="Pz9ydhUt4i5MVdE6Uo9aYQ" Ids="Lgpdeiy2MxEO7teWj6vqQv,Jny18Zq0suUPdd6SnTSvWj" />
+        <Link Id="N727EkvkrPvNuy7wMPu114" Ids="Jp1nGQP67d2P3loJEGBKri,D5oeoKfErMdOGdFznCdDn1" />
+        <Link Id="Bj6HZL6M8PXNw17A9EXtVq" Ids="QZbQpTaNkjrO99WBfwZevY,IpkiPviY1uKNiBPR0MylaN" />
+        <Link Id="LmhAA0wCf7XNzEcERPbVtY" Ids="HAcjL8BnJCQNlZnzREt4BX,MAGTbNatDJ5MGCdkTOADVG" />
+        <Link Id="IZy72uYneFONhe2IAskGQW" Ids="DyBoG9LLjrZNqHJvVVq0Uu,VFHeNpizQilLIapOIeb6h9" />
+        <Link Id="LVDcG03RQp5Obf5fz9t1Xx" Ids="LerS94MUXfHLEDYZtvKv42,GAnYSfJdGDvMM1Tx7l3BGs" />
+        <Link Id="GQy3eaf9aheOnX4Swxiipx" Ids="E7XI73jVypiQRCICT16skC,TcsQdUmD0m8QH3xJOU8IXl" />
+        <Link Id="MGpMqxwWRy1PhbyG5ifIiz" Ids="QZbQpTaNkjrO99WBfwZevY,SWGAZ0QFhNGNbKThyIfSdN" />
+        <Link Id="MOT6qapwxNLOAravsQmysk" Ids="S56KGynuzZqQGRtV2qRwtq,VE8B0fxORgLMun56ZlHfpQ" />
+        <Link Id="EfPttyz9UdpPWGufQVyZoe" Ids="I4CWvYr8vc3POm0djdTdBJ,BDI5QFpRbMFNMYv2sVjW3n" />
+        <Link Id="OLkQuwCIK4tPg7RJ7dUy1C" Ids="I4CWvYr8vc3POm0djdTdBJ,T4DMXVrTzeCQUfMFuMS5KU" />
+        <Link Id="L7xjBevedPwLfoGBxWw46e" Ids="NqaUQnISF6eQVj99v9quGL,QmbM2iHMHUEMcFxZOQO0Uw" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="EWS9sh6pm1gOhGt31gKP5I" Location="../VL.IO.InfluxDB.vl" />
+</Document>
