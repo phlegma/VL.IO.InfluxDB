@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="InfluxDB3.Client" Version="1.4.0" />
+    <PackageReference Include="VL.Core" Version="2025.7.1-0033-g351d89452e" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="VL.Core" />
+    <Using Include="VL.Core.Import" />
+    <Using Include="VL.Lib.Collections" />
+    <Using Include="Stride.Core.Mathematics" />
+  </ItemGroup>
+
+</Project>

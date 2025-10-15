@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2025.7.1-0032-g30eee3cbf9" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="EWHWcwf3oBvPnhn254YyBa" LanguageVersion="2025.7.1-0033-g351d89452e" Version="0.128">
   <Patch Id="Rgz0iK0cdl5O6XLZAnSI2k">
     <Canvas Id="EtMz6eWyJpjMOVOROl6714" DefaultCategory="VL.IO.InfluxDB" CanvasType="FullCategory">
       <!--
@@ -299,7 +299,7 @@
         </p:NodeReference>
         <Patch Id="G5BPm7SXyjFLEcAaCdCWOF">
           <Canvas Id="L63EhKBqfhGPkmUXH4dVqp" CanvasType="Group">
-            <Node Bounds="109,255,214,162" Id="UzBBWS3fcr9MqqcvtuU0my">
+            <Node Bounds="109,255,406,182" Id="UzBBWS3fcr9MqqcvtuU0my">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -333,8 +333,9 @@
                   <Pin Id="CRGk98Ogq5xOY7pcDnlsYQ" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="FiWsKL4g05IPSZEQKuTD0r" Name="Is Completed" Kind="OutputPin" />
                 </Node>
+                <Pad Id="Q9rkKG0qP7KOiGVnNxOwwB" Comment="Is Completed" Bounds="386,390,35,35" ShowValueBox="true" isIOBox="true" />
               </Patch>
-              <ControlPoint Id="LbJkw8kviGLPSFqqggJfKT" Bounds="306,411,3,0" Alignment="Bottom" />
+              <ControlPoint Id="LbJkw8kviGLPSFqqggJfKT" Bounds="306,431,3,0" Alignment="Bottom" />
               <ControlPoint Id="HujOf6GgyPENVHqTHmkwqA" Bounds="306,261,3,0" Alignment="Top" />
             </Node>
             <ControlPoint Id="GzS9n4jDpRvLhj59gOsGwT" Bounds="52,30" />
@@ -404,6 +405,7 @@
           <Link Id="Oj2Z3Fhlvc5OH2310aqFAH" Ids="QU0zP9RC0gRNHwoDSz1ztp,LvybMjUD4M7PGDim5NrEel" IsHidden="true" />
           <Link Id="OcNOg4ogLvzMadep0rGa8N" Ids="SR0KDsoaCBTNAxB7qSc4V9,MH9MM4rtXsBPQA2RQF6ZVV" />
           <Link Id="OhvK5LL4zG2MY5Ca3FXyce" Ids="L0DdkSLNJS6NTAyqjAuYmp,SR0KDsoaCBTNAxB7qSc4V9" IsHidden="true" />
+          <Link Id="MxQITCDwuWLOJbl0zogC1V" Ids="FiWsKL4g05IPSZEQKuTD0r,Q9rkKG0qP7KOiGVnNxOwwB" />
         </Patch>
       </Node>
       <Canvas Id="FAdJn5axl74PyZe9mRCppi" Name="Advanced" Position="31,40">
@@ -1925,7 +1927,34 @@
             <ControlPoint Id="F2Y8U8QvQACPVKBfhz65Ts" Bounds="144,120" />
             <Pad Id="MNf8m1lpMl1Mn6GE0PW51f" SlotId="UeBSJJtKzcNMB9fQXt5xzT" Bounds="226,401" />
             <Pad Id="UlEp0J8YtyQOVKy5NK0DIz" SlotId="UeBSJJtKzcNMB9fQXt5xzT" Bounds="306,240" />
-            <ControlPoint Id="PauSjILddiJMVPIlQkeIBy" Bounds="226,420" />
+            <ControlPoint Id="PauSjILddiJMVPIlQkeIBy" Bounds="226,480" />
+            <Node Bounds="408,238,80,80" Id="CA1LMq8p34dPQLGo5fQjSr">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="KXOEDQsn2NDPiDolyPCbL7" Name="Condition" Kind="InputPin" />
+              <Patch Id="TeoTHvEcGq8LUQqpKudL71" ManuallySortedPins="true">
+                <Patch Id="NvhF5oM7WNoM1HaiJFIQxY" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="GvvvJTjMl30Oddza4fmZNv" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="427,270,43,19" Id="Gb88KhDFSfXL0HDstf9SAL">
+                  <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB" LastDependency="VL.IO.InfluxDBUtils.csproj">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Demo" />
+                  </p:NodeReference>
+                  <Pin Id="Q2eiChpEdhIPRsA1hKhD8h" Name="Client" Kind="InputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Pad Id="FDLJXaA7GpTOohrGINMlNp" Comment="Condition" Bounds="411,200,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
           </Canvas>
           <Patch Id="RsNUMhHwmHsLZeY8tp67Q2" Name="Create" />
           <Patch Id="CFkRpkkfkRNOiCwZKYD3Vj" Name="Update" ManuallySortedPins="true">
@@ -1967,6 +1996,8 @@
           <Link Id="Oss3BTCiVjRLurADXiT1DA" Ids="UlEp0J8YtyQOVKy5NK0DIz,MPvpyzBJOjmPr9rzyRvQ0a" />
           <Link Id="KBVNuhPDqD1MFaGf5DczYy" Ids="MNf8m1lpMl1Mn6GE0PW51f,PauSjILddiJMVPIlQkeIBy" />
           <Link Id="Fuj3luhWD1DMSVI5bvtbal" Ids="PauSjILddiJMVPIlQkeIBy,HHMMqH2japMOJLci1UVyeo" IsHidden="true" />
+          <Link Id="ReDgqU82kbWPFkpnZ5MReK" Ids="O02qZBUlx65M5JxlxTWwHo,Q2eiChpEdhIPRsA1hKhD8h" />
+          <Link Id="GYE0fu18EkSLaDFTTss0aj" Ids="FDLJXaA7GpTOohrGINMlNp,KXOEDQsn2NDPiDolyPCbL7" />
         </Patch>
       </Node>
     </Canvas>
@@ -1991,6 +2022,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2025.7.1-0032-g30eee3cbf9" />
+  <NugetDependency Id="Ko9OqCOVyY7Pz8mbJrOqb0" Location="VL.CoreLib" Version="2025.7.1-0033-g351d89452e" />
   <NugetDependency Id="H11zEwiwuvVPtgDUmjfiGq" Location="InfluxDB3.Client" Version="1.4.0" />
+  <ProjectDependency Id="B1yy5LLWxn5LdcUgjm6yyU" Location="./csharp/VL.IO.InfluxDBUtils/VL.IO.InfluxDBUtils.csproj" />
+  <PlatformDependency Id="ExRgUhDNkhQOfCyBlaQW8A" Location="System.Linq" />
 </Document>
