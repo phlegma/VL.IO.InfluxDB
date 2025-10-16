@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="IhyjDrPjK3WLK7ZXNNmI1w" LanguageVersion="2025.7.1-0033-g351d89452e" Version="0.128">
-  <NugetDependency Id="SuV33WkcSt7NNk4P6q41vI" Location="VL.CoreLib" Version="2025.7.1-0033-g351d89452e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="IhyjDrPjK3WLK7ZXNNmI1w" LanguageVersion="2025.7.1-0035-g10a9323056" Version="0.128">
+  <NugetDependency Id="SuV33WkcSt7NNk4P6q41vI" Location="VL.CoreLib" Version="2025.7.1-0035-g10a9323056" />
   <Patch Id="Ei3qjemSP6yL3lx3Wz1AlS">
     <Canvas Id="G0h3H7OO2hiNA4SG4XgJVb" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -206,6 +206,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="G5s6nUS6MriMEWEqpnbKdV" Comment="Phase" Bounds="233,630,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="UQVI1xlcvhDQJMnES7COFk" Name="Create" />
         <Patch Id="LCrxjI27Wp1LtObssxzkld" Name="Update" />
@@ -232,6 +233,7 @@
         <Link Id="GQy3eaf9aheOnX4Swxiipx" Ids="E7XI73jVypiQRCICT16skC,TcsQdUmD0m8QH3xJOU8IXl" />
         <Link Id="BTEKNnJZgwAQUaJxV2e220" Ids="UsundE3H7koPKVjsixTn8B,QokKXK0LcrFMLD0ZkakqjU" />
         <Link Id="HTi1F00ACHTQV0WRqd4hHF" Ids="B93fYIVrtt8MkTALQirjJX,BDI5QFpRbMFNMYv2sVjW3n" />
+        <Link Id="Nx5MNtVJ98qPzPaRDUL40o" Ids="RaV2VdgnVSxPKlFZPjLl79,G5s6nUS6MriMEWEqpnbKdV" />
       </Patch>
     </Node>
   </Patch>
