@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Va8gDxoX6xSOj7yNDDIMhS" LanguageVersion="2025.7.1-0035-g10a9323056" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="BNl1x61JHTOOMqfpPGjcne" LanguageVersion="2025.7.1-0035-g10a9323056" Version="0.128">
   <NugetDependency Id="SuV33WkcSt7NNk4P6q41vI" Location="VL.CoreLib" Version="2025.7.1-0035-g10a9323056" />
   <Patch Id="Ei3qjemSP6yL3lx3Wz1AlS">
     <Canvas Id="G0h3H7OO2hiNA4SG4XgJVb" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -78,24 +78,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="21,390,85,19" Id="KxLJNhAq5AROR0pJiKLW0C">
-            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB" LastDependency="VL.IO.InfluxDB.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="InfluxDB" />
-              <Choice Kind="ProcessAppFlag" Name="Query" />
-            </p:NodeReference>
-            <Pin Id="HpkgXgIoL2DOTgE64aWHOT" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="SWGAZ0QFhNGNbKThyIfSdN" Name="Client" Kind="InputPin" />
-            <Pin Id="VE8B0fxORgLMun56ZlHfpQ" Name="Database" Kind="InputPin" />
-            <Pin Id="T4DMXVrTzeCQUfMFuMS5KU" Name="Send" Kind="InputPin" />
-            <Pin Id="GVl6hSVeW32PwGtcUl2V3C" Name="Headers" Kind="InputPin" IsHidden="true" />
-            <Pin Id="OFTSAXXWp41MGrTfJ4rqMk" Name="Named Parameters" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ERc9kMAPxQhK90Qj5AWy3I" Name="Query Type" Kind="InputPin" DefaultValue="SQL" />
-            <Pin Id="QmbM2iHMHUEMcFxZOQO0Uw" Name="Query" Kind="InputPin" />
-            <Pin Id="VWpCa8ChQk2QGYwrjEs6iA" Name="Response" Kind="OutputPin" />
-            <Pin Id="B0gawP46EzGLlkSlAZCfiY" Name="On Data" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="41,340,45,19" Id="My5EJxQ4SCfPbyHfsxwYjx">
+          <Node Bounds="81,330,45,19" Id="My5EJxQ4SCfPbyHfsxwYjx">
             <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
@@ -110,13 +93,34 @@
             <Pin Id="I4CWvYr8vc3POm0djdTdBJ" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="Bki5IQzzzrBN0H8MJkQUHI" Name="Cycles" Kind="OutputPin" />
           </Node>
-          <Pad Id="NqaUQnISF6eQVj99v9quGL" Comment="io" Bounds="103,301,372,15" ShowValueBox="true" isIOBox="true" Value="SELECT * FROM vvvv WHERE time &gt;= now() - interval '1 hour'">
+          <Pad Id="NqaUQnISF6eQVj99v9quGL" Comment="io" Bounds="63,310,372,15" ShowValueBox="true" isIOBox="true" Value="SELECT * FROM vvvv WHERE time &gt;= now() - interval '1 hour'">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Ht5pJ8tRkyMLxFSypPfj9Q" Comment="Response" Bounds="23,490,654,382" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NANxmXF9TnDPNvKDVWZrD6" Comment="On Data" Bounds="103,430,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ht5pJ8tRkyMLxFSypPfj9Q" Comment="Response" Bounds="23,511,654,382" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NANxmXF9TnDPNvKDVWZrD6" Comment="On Data" Bounds="103,430,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="21,390,85,19" Id="QGT7YKsyAHrPBoxHNp3KiJ">
+            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB" LastDependency="VL.IO.InfluxDB.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="InfluxDB" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="QueryBatches" />
+            </p:NodeReference>
+            <Pin Id="DZuttgq4m56PYpxhxjFsbm" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OKZPNMebUjxL7nX5qgRXv2" Name="Client" Kind="InputPin" />
+            <Pin Id="NvlZjBxACU6O580sHUb0Z1" Name="Database" Kind="InputPin" />
+            <Pin Id="DnwaNkqC6hXOWUdHq9qvWs" Name="Query" Kind="InputPin" />
+            <Pin Id="MHYDZ9adecuLszN0hgLqt3" Name="Headers" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Nd01FrVfNN8PcMaVDvyi2c" Name="Named Parameters" Kind="InputPin" IsHidden="true" />
+            <Pin Id="J2wPQgGjUNHL2sEEg86DsE" Name="Query Type" Kind="InputPin" DefaultValue="SQL" />
+            <Pin Id="BAySMooxbccNZs8FQbuZY8" Name="Send" Kind="InputPin" />
+            <Pin Id="SieTphQGCsiNTVm5xIYVjU" Name="Response" Kind="OutputPin" />
+            <Pin Id="TyAwaRdrj5cLRMOFnZIt9k" Name="On Data" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="UQVI1xlcvhDQJMnES7COFk" Name="Create" />
         <Patch Id="LCrxjI27Wp1LtObssxzkld" Name="Update" />
@@ -128,14 +132,15 @@
         <Link Id="GWQQLJx7qgCNU0xFFiqmk3" Ids="UURFoXlyqZtLTMTVBIlIah,P4mKPM0IJL9Ls8PGfTCrsq" />
         <Link Id="SsG9qIAcKEGLqWYz5zvTKo" Ids="Ry1FhWRZaO2MCeUsDWFdWF,TmFNN7sKlL6LsQov7o4Kf1" />
         <Link Id="HLc9CnxnV1pMMTH58ooe5D" Ids="EkGW5fVAuHpNsOayw2wbyO,S3kMlFuM2y4QPV9r71F0ND" />
-        <Link Id="MGpMqxwWRy1PhbyG5ifIiz" Ids="QZbQpTaNkjrO99WBfwZevY,SWGAZ0QFhNGNbKThyIfSdN" />
-        <Link Id="OLkQuwCIK4tPg7RJ7dUy1C" Ids="I4CWvYr8vc3POm0djdTdBJ,T4DMXVrTzeCQUfMFuMS5KU" />
-        <Link Id="L7xjBevedPwLfoGBxWw46e" Ids="NqaUQnISF6eQVj99v9quGL,QmbM2iHMHUEMcFxZOQO0Uw" />
-        <Link Id="DYNzKPyiqvJPoxZVhpSclu" Ids="S56KGynuzZqQGRtV2qRwtq,VE8B0fxORgLMun56ZlHfpQ" />
-        <Link Id="NGkw3XYsBBEOOF76VODjUP" Ids="VWpCa8ChQk2QGYwrjEs6iA,Ht5pJ8tRkyMLxFSypPfj9Q" />
-        <Link Id="BMlstBwf4ZvOAwGjPRxxVC" Ids="B0gawP46EzGLlkSlAZCfiY,NANxmXF9TnDPNvKDVWZrD6" />
+        <Link Id="LTUJDXKUaKTLl7231oPegy" Ids="QZbQpTaNkjrO99WBfwZevY,OKZPNMebUjxL7nX5qgRXv2" />
+        <Link Id="GRMs6jrTC55ObTk5ZxpqsT" Ids="S56KGynuzZqQGRtV2qRwtq,NvlZjBxACU6O580sHUb0Z1" />
+        <Link Id="Cxg0FbgWrepNmsf7Y8EiYp" Ids="NqaUQnISF6eQVj99v9quGL,DnwaNkqC6hXOWUdHq9qvWs" />
+        <Link Id="Su40AoJo6AUMWLxCP6IMOq" Ids="I4CWvYr8vc3POm0djdTdBJ,BAySMooxbccNZs8FQbuZY8" />
+        <Link Id="Vb6YIYxLzgGNU1mMdZJbxk" Ids="SieTphQGCsiNTVm5xIYVjU,Ht5pJ8tRkyMLxFSypPfj9Q" />
+        <Link Id="FDgOS9V9Vn7LIogdrBBslk" Ids="TyAwaRdrj5cLRMOFnZIt9k,NANxmXF9TnDPNvKDVWZrD6" />
       </Patch>
     </Node>
   </Patch>
   <DocumentDependency Id="EWS9sh6pm1gOhGt31gKP5I" Location="../VL.IO.InfluxDB.vl" />
+  <NugetDependency Id="FDRDgfyhWyiM84uTU4FWBu" Location="InfluxDB3.Client" Version="1.4.0" />
 </Document>
