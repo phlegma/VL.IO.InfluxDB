@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Va8gDxoX6xSOj7yNDDIMhS" LanguageVersion="2025.7.1-0035-g10a9323056" Version="0.128">
-  <NugetDependency Id="SuV33WkcSt7NNk4P6q41vI" Location="VL.CoreLib" Version="2025.7.1-0035-g10a9323056" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Va8gDxoX6xSOj7yNDDIMhS" LanguageVersion="2025.7.1-0042-gb4eb70cb8e" Version="0.128">
+  <NugetDependency Id="SuV33WkcSt7NNk4P6q41vI" Location="VL.CoreLib" Version="2025.7.1-0042-gb4eb70cb8e" />
   <Patch Id="Ei3qjemSP6yL3lx3Wz1AlS">
     <Canvas Id="G0h3H7OO2hiNA4SG4XgJVb" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -20,12 +20,12 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UURFoXlyqZtLTMTVBIlIah" Comment="Token" Bounds="50,50,72,15" ShowValueBox="true" isIOBox="true" Value="uVs8Nj6xpdaJF1eWOCFubXj80rtv2ZenVqg_lqWhYYXk0zHfK47sx1OEz9_l68aFHFxS4-PYcBNf-t-vRBoIYw==">
+          <Pad Id="UURFoXlyqZtLTMTVBIlIah" Comment="Token" Bounds="63,50,116,15" ShowValueBox="true" isIOBox="true" Value="MyToken">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Ry1FhWRZaO2MCeUsDWFdWF" Comment="Organization" Bounds="76,81,45,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+          <Pad Id="Ry1FhWRZaO2MCeUsDWFdWF" Comment="Organization" Bounds="103,81,70,15" ShowValueBox="true" isIOBox="true" Value="MYOrganization">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -41,9 +41,9 @@
             <Pin Id="N1w2RL0lnwUML39XKXSUEt" Name="Host" Kind="InputPin" />
             <Pin Id="P4mKPM0IJL9Ls8PGfTCrsq" Name="Token" Kind="InputPin" />
             <Pin Id="TmFNN7sKlL6LsQov7o4Kf1" Name="Organization" Kind="InputPin" />
-            <Pin Id="BxUxwUIs6FLLJ6SNoR04Fi" Name="Database" Kind="InputPin" />
             <Pin Id="IA7qpJeqkYwQQ0VkW4fE3g" Name="Success" Kind="OutputPin" />
             <Pin Id="QeawjKbvWqKN8Qu4w17F9x" Name="Server Version" Kind="OutputPin" />
+            <Pin Id="P1HrrL1JqsKLJrmcAgTybo" Name="Database" Kind="InputPin" IsHidden="true" />
           </Node>
           <Pad Id="S3kMlFuM2y4QPV9r71F0ND" Comment="Error Message" Bounds="50,171,170,39" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MuYHX6aYE3BN3tykYOi8r7" Bounds="-11,-97,408,39" ShowValueBox="true" isIOBox="true" Value="https://www.influxdata.com/get-influxdb/">
@@ -78,7 +78,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="81,330,45,19" Id="My5EJxQ4SCfPbyHfsxwYjx">
+          <Node Bounds="81,350,45,19" Id="My5EJxQ4SCfPbyHfsxwYjx">
             <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
@@ -86,7 +86,7 @@
             <Pin Id="FwFw4C6uionOgTtg9SAvRg" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="CaOPxf4HR1ELxOyJoHJGi8" Name="Clock" Kind="InputPin" IsHidden="true" />
             <Pin Id="LgegXoDdHZOMkuzRHKA8GO" Name="New Clock" Kind="InputPin" IsHidden="true" />
-            <Pin Id="QFJxzDwJwH5OzEgJBlQfQF" Name="Period" Kind="InputPin" DefaultValue="5" />
+            <Pin Id="QFJxzDwJwH5OzEgJBlQfQF" Name="Period" Kind="InputPin" />
             <Pin Id="KjwqvD1ZWc5LViyQBFSWTz" Name="Pause" Kind="InputPin" />
             <Pin Id="Ug2CnELF8jdOpywJWxTbAd" Name="Reset" Kind="ApplyPin" />
             <Pin Id="SnBF9ZpMt85NmvYFV2yoeQ" Name="Phase" Kind="OutputPin" />
@@ -114,6 +114,7 @@
             <Pin Id="Efyy56WZG0HPeVaRKh3zdb" Name="Send" Kind="InputPin" />
             <Pin Id="QP00eJbMCnjMqw0JVFfi3T" Name="Response" Kind="OutputPin" />
             <Pin Id="FGpXiuk8WJjPBniE0bRMYT" Name="On Data" Kind="OutputPin" />
+            <Pin Id="RzVfZ4tQW1KPkK9RawtSSR" Name="Error Message" Kind="OutputPin" />
           </Node>
         </Canvas>
         <Patch Id="UQVI1xlcvhDQJMnES7COFk" Name="Create" />

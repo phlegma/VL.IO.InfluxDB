@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="IhyjDrPjK3WLK7ZXNNmI1w" LanguageVersion="2025.7.1-0032-g30eee3cbf9" Version="0.128">
-  <NugetDependency Id="SuV33WkcSt7NNk4P6q41vI" Location="VL.CoreLib" Version="2025.7.1-0032-g30eee3cbf9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="IhyjDrPjK3WLK7ZXNNmI1w" LanguageVersion="2025.7.1-0042-gb4eb70cb8e" Version="0.128">
+  <NugetDependency Id="SuV33WkcSt7NNk4P6q41vI" Location="VL.CoreLib" Version="2025.7.1-0042-gb4eb70cb8e" />
   <Patch Id="Ei3qjemSP6yL3lx3Wz1AlS">
     <Canvas Id="G0h3H7OO2hiNA4SG4XgJVb" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -61,9 +61,9 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="37,250,51,26" Id="LDtlKbEcYYUPLuusbd5JzR">
-            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB.PointData" LastDependency="VL.IO.InfluxDB.vl">
+            <p:NodeReference LastCategoryFullName="VL.IO.InfluxDB" LastDependency="VL.IO.InfluxDB.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="ClassType" Name="PointData" NeedsToBeDirectParent="true" />
+              <CategoryReference Kind="Category" Name="InfluxDB" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="SetTag" />
             </p:NodeReference>
             <Pin Id="MAGTbNatDJ5MGCdkTOADVG" Name="Input" Kind="StateInputPin" />
@@ -81,7 +81,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="HPNrJ1PqjQcPrZfAaHlRWj" Bounds="211,242,173,19" ShowValueBox="true" isIOBox="true" Value="set a tag for the PointData.">
+          <Pad Id="HPNrJ1PqjQcPrZfAaHlRWj" Bounds="181,260,174,19" ShowValueBox="true" isIOBox="true" Value="set a tag for the PointData.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -101,7 +101,7 @@
             <Pin Id="LZ63hlqlV3FOXzKhgLeE2b" Name="Output" Kind="StateOutputPin" />
             <Pin Id="UDIkuYGcVcnNcppSVThiRf" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="OKSisNeqTANPM385Djxc9o" Comment="" Bounds="118,481,276,47" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OKSisNeqTANPM385Djxc9o" Comment="" Bounds="118,481,328,22" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MZNB3FLHy3TMadLBwYhEJq" Comment="Time Unit" Bounds="79,390,43,15" ShowValueBox="true" isIOBox="true" Value="Us">
             <p:TypeAnnotation LastCategoryFullName="VL.IO.InfluxDB" LastDependency="VL.IO.InfluxDB.vl">
               <Choice Kind="TypeFlag" Name="WritePrecision" />
