@@ -12,7 +12,7 @@
     <version>1.0.0-alpha</version>
     <title>VL.IO.InfluxDB</title>
     <!-- Provide authors, projectUrl (website) and repository url-->
-    <authors></authors>
+    <authors>phlegma</authors>
     <projectUrl></projectUrl>
     <repository
       type="git" url="https://github.com/phlegma/VL.IO.InfluxDB/" />
