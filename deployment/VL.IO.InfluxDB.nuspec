@@ -18,7 +18,7 @@
       type="git" url="https://github.com/phlegma/VL.IO.InfluxDB/" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Provide description and tags-->
-    <description></description>
+    <description>VL Wrapper for the InfluxDB 3 C# .NET Client</description>
     <tags>VL,InfluxDB, Database, Client</tags>
     <license type="expression">MIT</license>
     <icon>icon\nugeticon.png</icon>
