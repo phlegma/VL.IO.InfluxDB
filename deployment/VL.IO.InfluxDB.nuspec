@@ -9,7 +9,7 @@
     <id>VL.IO.InfluxDB</id>
     <!-- For more about versions see:
     https://thegraybook.vvvv.org/reference/extending/publishing.html#version -->
-    <version>1.0.0-alpha</version>
+    <version>1.0.0</version>
     <title>VL.IO.InfluxDB</title>
     <!-- Provide authors, projectUrl (website) and repository url-->
     <authors>phlegma</authors>
