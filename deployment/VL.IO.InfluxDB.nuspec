@@ -20,7 +20,7 @@
     <!-- Provide description and tags-->
     <description></description>
     <tags>VL,InfluxDB, Database, Client</tags>
-    <license type="expression">MIT License</license>
+    <license type="expression">MIT</license>
     <icon>icon\nugeticon.png</icon>
     <readme>docs\README.md</readme>
     <dependencies>

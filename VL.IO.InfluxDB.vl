@@ -1247,7 +1247,7 @@
               <Pin Id="Nn5z3Zhxb2YPx9QPWgSBlP" Name="Output" Kind="StateOutputPin" />
             </Node>
             <ControlPoint Id="SqcxGcnOEC8QNWtVLh4fHQ" Bounds="20,101" />
-            <ControlPoint Id="SlSRIUz0eiGLDeL6UKatCL" Bounds="306,570,3,0" />
+            <ControlPoint Id="SlSRIUz0eiGLDeL6UKatCL" Bounds="306,551,3,0" />
             <ControlPoint Id="M1JRcGRzTDQLLOD706pFmX" Bounds="144,111" />
             <ControlPoint Id="BCwb2nkuooBMNVzJN8GKvy" Bounds="164,150" />
             <ControlPoint Id="CyJ3cuLgk7CM4zcPhWFnxC" Bounds="123,81" />
@@ -1255,6 +1255,15 @@
             <Pad Id="STVI5uwiv6IP8Yg9QcTGeO" Comment="" Bounds="20,200,35,35" ShowValueBox="true" isIOBox="true" />
             <ControlPoint Id="BZ5O5ERoypBOgkuzfTXcrK" Bounds="205,220" />
             <ControlPoint Id="G56Uj7AZLGNMI69DxAlXyK" Bounds="226,240" />
+            <Pad Id="NQ2tJDnJMfJLaWLM2l4XZs" Bounds="397,549,380,66" ShowValueBox="true" isIOBox="true" Value="IsCompleted is not every time triggered, also when data is received by the db">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
           </Canvas>
           <Patch Id="EpEalCnnzd9PfCHJ3SAWe7" Name="Create" />
           <Patch Id="A75uKBZX4NCLitCwyFIoHj" Name="Update" ManuallySortedPins="true">
