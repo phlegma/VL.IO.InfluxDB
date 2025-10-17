@@ -13,12 +13,12 @@
     <title>VL.IO.InfluxDB</title>
     <!-- Provide authors, projectUrl (website) and repository url-->
     <authors>phlegma</authors>
-    <projectUrl></projectUrl>
+    <projectUrl>https://github.com/phlegma/VL.IO.InfluxDB/</projectUrl>
     <repository
       type="git" url="https://github.com/phlegma/VL.IO.InfluxDB/" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Provide description and tags-->
-    <description>VL Wrapper for the InfluxDB 3 C# .NET Client</description>
+    <description></description>
     <tags>VL,InfluxDB, Database, Client</tags>
     <license type="expression">MIT</license>
     <icon>icon\nugeticon.png</icon>
