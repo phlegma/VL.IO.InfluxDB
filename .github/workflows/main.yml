@@ -31,7 +31,7 @@ jobs:
       uses: vvvv/PublishVLNuget@1.0.43
       with:
         # csproj: src\VL.NewLibrary.Template.csproj
-        nuspec: deployment\VL.IO.InfluxDB
+        nuspec: deployment\VL.IO.InfluxDB.nuspec
 
         # Fill the Icon file
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
