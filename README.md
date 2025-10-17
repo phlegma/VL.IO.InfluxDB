@@ -5,7 +5,7 @@ This is a wrapper of the [InfluxDB 3 C# .NET Client](https://github.com/InfluxCo
 For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
 ## Known Issues
-Write Nodes: The IsCompleted function from the task is not trigger proberbly
+Write Nodes: The IsCompleted function from the task is not trigger proberbly   
 Query Nodes: Type parsing of the return values is not included in the library
 
 ## Getting started
